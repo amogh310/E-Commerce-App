@@ -38,9 +38,7 @@ public class ProductServiceImpl implements ProductService
     @Transactional
     @Override
     public boolean addProduct(Product product) {
-
-        System.out.println("just adding ");
-
+        System.out.println("just adding comment new") ;
         if (product.getName() != null && !"".equals(product.getName()) && product.getInventoryAmount() != null && product.getCategory() != null && !"".equals(product.getCategory()))
         {
             try {
